@@ -1,0 +1,256 @@
+.birthstone-regular {
+    font-family: "Birthstone", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.delius-regular {
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body {
+    margin: 0px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+header {
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+#redetop {
+    text-align: right;
+}
+
+.cabecalho {
+    background-color: #fcfcfc;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 20px 0px 20px;
+    padding: 20px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #fcfcfc;
+    text-align: center;
+    padding: 30px;
+    color: #fcfcfc;
+}
+
+nav a {
+    font-family: "Birthstone", serif;
+    /* font-size: xx-large; */
+    font-size: 30px;
+    font-weight: 300;
+    color: #000;
+    text-decoration: none;
+    size: 60px;
+    padding: 30px;
+}
+
+h1 {
+    font-family: "Birthstone", serif;
+    font-weight: 200;
+    background-image: url(Lente\ 50mm\ capa.png);
+    background-position: center;
+    background-size: cover;
+    color: #fcfcfc;
+    padding: 200px;
+    text-align: center;
+}
+
+.corpo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 40px 0px 40px;
+    padding: 20px;
+    text-align: center;
+}
+.template a {
+    text-decoration: none;
+    width: 400px;
+}
+
+h2 {
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 600px;
+    color: #161616;
+    /* padding: 100px; */
+    text-align: justify;
+}
+
+h3 {
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 25px;
+    /* width: 600px; */
+    color: #161616;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 500px 20px 500px;
+}
+
+h4 {
+    font-family: "Delius", serif;
+    font-weight: 600;
+    font-style: normal ;
+    font-size: 25px;
+    /* width: 600px; */
+    color: #161616;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 500px 20px 500px;
+}
+
+h5 {
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 25px;
+    color: #161616;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: "Delius", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    /* width: 800px; */
+    color: #161616;
+    /* padding: 50px; */
+    text-align: justify;
+    margin: 20px 500px 20px 500px;
+}
+
+.fotografos ul {
+    font-family: "Delius", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    /* width: 800px; */
+    color: #161616;
+    /* padding: 50px; */
+    text-align: justify;
+    margin: 20px 500px 20px 500px;
+}
+
+.rodape {
+    display:inline-block;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+.rodape a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #fcfcfc;
+    text-align: center;
+    padding: 30px;
+}
+
+nav a {
+    transition: all 0.4s;
+}
+
+nav a:hover {
+    /* transform: translateY(10px); */
+    font-size: 50px;
+}
+
+.icon-efects {
+    transition: all 0.4s;
+}
+
+.icon-efects:hover {
+    transform: translateY(-5px);
+}
+
+.galeria a{
+    text-decoration: none;
+}
+
+.cta-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+}
+
+.cta-container h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: bold;
+}
+
+.cta-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 500px;
+}
+
+.cta-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 500px;
+    justify-content: center;
+}
+  
+.cta-form input, .cta-form select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+  
+.cta-form button {
+    background: #2ecc71;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.equipamentos tr, td{
+    text-align: center;
+    padding: 20px;
+    font-family: "Delius", serif;
+    font-weight: 200;
+    font-style: normal;
+    /* border-style: solid; */
+    border-bottom: solid;
+    border-color: #000;
+    border-width: 1px;
+    margin: 0px;
+}
+
+.equipamentos table{
+    margin: auto;
+    width: 1200px;
+    padding: 40px;
+}
+.equipamentos p {
+    margin: auto;
+    width: 800px;
+    padding: 40px;
+}
+
+.video {
+    padding: 20px;
+}

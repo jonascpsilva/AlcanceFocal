@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcance Focal</title>
+    <link rel="stylesheet" href="alcancefocalestilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="cabecalho">
+            <img src="icones/Alcance Focal logo.png" alt="" width="100px">
+        </div>
+
+        <div class="cabecalho">
+            <nav>
+                <a href="#historia">História</a>
+                <a href="#fotografos">Fotógrafos</a>
+                <a href="#tiposdefotos">O que fotografar?</a>
+                <a href="#cameras">Equipamentos</a>
+                <a href="#comece">Comece a agora</a>
+            </nav>
+        </div>
+
+        <div class="cabecalho">
+            <div id="redetop">
+            
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="icones/Facebook.png" class="icon-efects"  alt="" width="40px">
+                </a>
+        
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="icones/Instagram.png" class="icon-efects"  alt="" width="40px">
+                </a>
+    
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img src="icones/Whatsapp.png" class="icon-efects"  alt="" width="40px">
+                </a>
+    
+            </div>
+        </div>
+
+    </header>
+
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <!-- <div class="numbertext">1 / 3</div> -->
+      <img src="imagens/Carrossel/Lente-50mm-pexels-daniel-reche-718241-3616964.png" style="width:100%">
+      <!-- <div class="text">Bombons</div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <!-- <div class="numbertext">2 / 3</div> -->
+      <img src="imagens/Carrossel/filmagem-profissional-pexels-cottonbro-3206120.png" style="width:100%">
+      <!-- <div class="text">Chocolate em Barras</div> -->
+    </div>
+
+    <div class="mySlides fade">
+      <!-- <div class="numbertext">3 / 3</div> -->
+      <img src="imagens/Carrossel/capturando-pexels-umaraffan499-22185.png" style="width:100%">
+      <!-- <div class="text">Chocolate em Lascas</div> -->
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+  
+      <script>
+          var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+      }
+
+      </script>
+
+
+  
+  <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1} 
+          slides[slideIndex-1].style.display = "block"; 
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+  </script>
+
+    <div id="historia">
+        <div class="corpo">
+             <img src="imagens/história da fotografia.png" alt="" width="600px">
+        </div>
+
+        <div class="corpo">
+            <div class="template">
+                <a href="História.html">
+                    <h2>
+                        Desde as primeiras imagens até as selfies, a fotografia revolucionou a comunicação e a memória. Reflita sobre seu impacto em nossas vidas.
+                    </h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="fotografos">
+        <div class="corpo">
+            <div class="template">
+                <a href="fotografos.html">
+                    <h2>
+                         Encontre os fotógrafos que te inspiram! Seja qual for o seu estilo, conheça alguns dos grandes nomes da fotografia e descubra novas paixões.
+                    </h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="corpo">
+                <img src="imagens/Fotografos.png" alt="" width="600px">
+        </div>
+    </div>
+
+    <br>
+
+    <div id="tiposdefotos">
+        <div class="corpo">
+            <img src="imagens/Tipos de Fotografias.png" alt="" width="600px">
+        </div>
+
+        <div class="corpo">
+            <div class="template">
+                <a href="o-que-fotografar.html">
+                    <h2>
+                        Descubra o fotógrafo que existe em você! Conheça alguns estilos fotográficos para explorar o mundo e capture momentos incríveis.
+                    </h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="cameras">
+
+        <div class="corpo">
+            <div class="template">
+                <a href="cameras.html">
+                    <h2>
+                        Aprenda a fotografar como um profissional. Seu guia completo de equipamentos para fotos incríveis.
+                    </h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="corpo">
+            <img src="imagens/cameras fotograficas.png" alt="" width="600px">
+        </div>
+    </div>
+
+    <br>
+
+    <div id="comece">
+
+        <div class="corpo">
+            <img src="imagens/comece agora.jpg.png" alt="" width="600px">
+        </div>
+
+        <div class="corpo">
+            <div class="template">
+                <a href="comece-agora.html">
+                    <h2>
+                        Crie seu portfólio online e mostre seu talento para o mundo! Entre nos nossos grupos e aproveite conteúdos exclusivos.
+                    </h2>
+                </a>
+           </div>
+        </div>
+
+    </div>
+
+    <br>
+
+
+</body>
+
+<footer>
+    <div class="rodape">
+        <a href="index.html">
+            <img src="icones/Alcance Focal logo.png" class="icon-efects"  alt="">
+        </a>
+    </div>
+
+    <div class="rodape">
+    
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="icones/Facebook.png" class="icon-efects"  alt="" width="40px">
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="icones/Instagram.png" class="icon-efects"  alt="" width="40px">
+        </a>
+
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="icones/YouTube.png" class="icon-efects"  alt="" width="40px">
+        </a>
+
+        <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="icones/Whatsapp.png" class="icon-efects"  alt="" width="40px">
+        </a>
+
+    </div>
+
+    <div>
+    &copy; AlcanceFocal | 2025
+    </div>
+
+
+</footer>
+</html>
